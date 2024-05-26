@@ -1,0 +1,122 @@
+body {
+    background-image: url('/wwr/images/river-narrow.jpg');
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+24+Charted&family=Seaweed+Script&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+:root {
+  --primary-color: #503ade;
+  --secondary-color: #5e44d1;
+  --accent1-color: #CFBCFA;
+  --accent2-color: #a27490;
+
+
+  --heading-font: 'Seaweed', serif;
+  --paragraph-font: 'Ubuntu', serif;
+
+  --nav-background-color: #CFBCFA;
+  --nav-link-color: #503ade;
+  --nav-hover-link-color: #a27490;
+  --nav-hover-background-color: #5e44d1;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+}
+
+selector {
+  font-size: value;
+  color: value;
+}
+p {
+  color: #000;
+}
+h1,h2,h3,h4,h5,h6 {
+  margin: 2px;
+  color: var(--accent2-color);
+  font-family: 'Jacquard', sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+/* a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+} */
+
+.container {
+  max-width: 1200px; /* Set the maximum width to whatever suits the design */
+  margin: 0 auto;    /* Center the container horizontally */
+  padding: 0 20px;   /* Add padding for spacing within the container */
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+.hero p {
+  padding-top: 30px;
+}
+
+.hero img {
+  display: block;
+  width: 32.50%;
+  height: auto;
+  position: absolute;
+  top: 51px;
+  left: 800px;
+}
+
+.hero h1 {
+  position: absolute;
+    top: 0px;
+    left: 320px;
+}
+
+
+
+/* main img {
+    float: right;
+    border: 1px solid green;
+}
+
+
+
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    background-color: #e0e6e0;
+    color: #333;
+    text-align: center;
+}   
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+aside h2 {
+    position: absolute;
+    top: 70px;
+    left: 140px;
+}
+ */
