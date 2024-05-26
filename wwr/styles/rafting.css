@@ -29,16 +29,17 @@ body {
 }
 
 body {
-  font-family: 'Muli', sans-serif;
+  font-family: 'Seaweed', sans-serif;
 }
 
-selector {
-  font-size: value;
-  color: value;
-}
 p {
   color: #000;
 }
+
+article p {
+    margin-top: auto;
+}
+
 h1,h2,h3,h4,h5,h6 {
   margin: 2px;
   color: var(--accent2-color);
@@ -67,7 +68,7 @@ a:link {
 .hero img {
   display: block;
   width: 32.50%;
-  height: auto;
+  height: 180px;
   position: absolute;
   top: 51px;
   left: 800px;
@@ -78,34 +79,3 @@ a:link {
     top: 0px;
     left: 320px;
 }
-
-
-
-/* main img {
-    float: right;
-    border: 1px solid green;
-}
-
-
-
-aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    background-color: #e0e6e0;
-    color: #333;
-    text-align: center;
-}   
-
-aside img {
-    width: 200px;
-    height: auto;
-}
-
-aside h2 {
-    position: absolute;
-    top: 70px;
-    left: 140px;
-}
- */
