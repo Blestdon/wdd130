@@ -49,18 +49,6 @@ a:link {
   text-decoration: none;
 }
 
-/* a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-a:active {
-  text-decoration: none;
-} */
-
 .container {
   max-width: 1200px; /* Set the maximum width to whatever suits the design */
   margin: 0 auto;    /* Center the container horizontally */
@@ -71,6 +59,7 @@ a:active {
   position: relative;
   overflow: hidden;
 }
+
 .hero p {
   padding-top: 30px;
 }
