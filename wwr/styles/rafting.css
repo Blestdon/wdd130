@@ -7,10 +7,17 @@
   background-repeat: no-repeat;
   background-size: cover;
 } */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
 
-body {
+  #background {
+
   background-position: center;
-  background-image: url('/wwr/images/river-narrow.jpg');
+  /* background-image: url("/wwr/images/rattle-snake.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -56,9 +63,9 @@ a:link {
 }
 
 .container {
-  max-width: 1200px; /* Set the maximum width to whatever suits the design */
-  margin: 0 auto;    /* Center the container horizontally */
-  padding: 0 20px;   /* Add padding for spacing within the container */
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 0 20px;   
 }
 
 .hero {
