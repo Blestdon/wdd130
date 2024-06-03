@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 130 | HTML Form - User Poll</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Allan:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Alice, Allan;
+    font-size: 1.2em;
+    color: #81D6E3;
+    background: #0B3954;
+}
+
+header {
+    margin: 0 auto;
+    width: 650px;
+}
+
+h1 {
+    margin: 1rem;
+    font-size: 1.5em;
+    color: #4CB5AE;
+    text-align: center;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: #8B85C1;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    color: aliceblue;
+    font-size: 1.3em;
+}
+
+label, input, button, select, textarea {
+    font-family: Allan, Alice, sans-serif;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+button {
+    margin: 1rem;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    border-top: 1px solid #ccc;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 2fr 1fr;
+    margin: 0 auto;
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>WDD 130 | Ukachukwu Blest |Basic HTML and CSS Quiz</h1>
+    </header>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Fill in the blank Question</legend> 
+                <div class="form-item column2">
+                <label for="q1">What is the HTML table element used for ?:</label>
+                <input type="text" id="q1" q1="q1">
+                </div>
+                <div class="form-item column2">
+                <label for="q2">What is CSS style and class selector ?:</label>
+                <input type="email" id="q2" name="q2">
+                </div>
+                <!-- you can use this second method -->
+                <!-- <legend>Contact Information</legend>
+                <label>Full Name: <input type="text" name="fullname"></label>
+                <label>Email: <input type="email" name="useremail"></label> -->
+            </fieldset>
+            <fieldset>
+                <legend>Question</legend>
+                <div class="form-item column1">
+                <label for="q3">Select an easy-to-style styling form widget in CSS</label>
+                <select id="q3" name="q3">
+                  <option value="form">form</option>
+                  <option value="fieldset">Fieldset</option>
+                  <option value="progress">progress</option>
+                  <option value="meter">meter</option>
+                  <option value="output">output</option>
+                  <option value="label">label</option>
+                </select>
+                </div>
+                <label for="q4">List some types of google font family:</label>
+                <textarea id="q4" name="q4" rows="4" placeholder="Allan, Alice, san-serif"></textarea>
+              </fieldset>
+                <!-- Form elements will go here-->
+            </fieldset>
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </main>
+    <footer>
+        <p>©2024 |Basic HTML and CSS Quiz Activity | Ukachukwu Blest</p>
+    </footer>
+</body>
+</html>
