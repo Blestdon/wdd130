@@ -18,7 +18,7 @@
 
 
     
-    --nav-background-color: #efdbdb;
+    --nav-background-color: #c8b5b5;
     --nav-link-color:#0000;
     --nav-hover-link-color:#ffe1e1;
     --nav-hover-background-color: #d89393;
@@ -31,6 +31,10 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+header img {
+    margin-left: 70px;
 }
 
 .one {
@@ -46,14 +50,15 @@ header {
 	grid-template-columns: 120px 1fr 2fr;
 	align-items: center;
 	border-bottom: 1px solid rgb(104, 36, 36);
-	max-width: 1000px;
-    background-color: var(--accent1);
+	max-width: 100%;
+    background-color: var(--nav-background-color);
 }
 
 .logo img {
-	margin: 0 0.25rem 0 1rem;
-	width: 100px;
-	height: 300;
+	margin-left: 30px;
+	width: 50px;
+	height: 50px;
+    padding-left: 40px;
     
 }
 
@@ -76,14 +81,16 @@ h1 {
 
 nav .first {
 	text-align: right;
-    background-color: var(--nav-background-color);
     margin-left: 10px;
+    background-color: var(--nav-link-color);
 }
 
 .navigation {
 	display: flex;
 	list-style: none;
-    margin-left: 120px;
+    margin-left: 160px;
+
+    /* background-color: var(--nav-link-color); */
 
 }
 
@@ -100,6 +107,7 @@ nav .first {
     font-weight: 40px;
     margin: 12px;
     padding: 5px;
+    height: 50px;
 }
 
 
@@ -129,50 +137,6 @@ fieldset {
     padding: 1rem;
 }
 
-legend {
-    padding: 0.5rem;
-    color: aliceblue;
-    font-size: 1.3em;
-}
-
-label, input, button, select, textarea {
-    font-family: 'robeto', 'Alice', sans-serif;
-}
-
-label {
-    text-align: right;
-    padding-right: 1rem;
-}
-
-input, select, textarea {
-    padding: 0.5rem;
-    font-size: 1.1rem;
-}
-
-button {
-    margin: 1rem;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: .5rem;
-    padding: .75rem;
-    font-size: 1.2rem;
-}
-
-.form-item {
-    display: grid;
-    align-items: center;
-}
-
-.column1 {
-    grid-template-columns: 3fr 1fr;
-    margin: 0.5rem 0;
-}
-
-.column2 {
-    grid-template-columns: 2fr 1fr;
-    margin: 0 auto;
-}
 h4 {
 	margin: 1rem;
     font-size: 1.5em;
@@ -213,16 +177,14 @@ h4 {
 text-align: center;
 }
 
-
-.grid-container3 {
-    background-color: var(--nav-hover-link-color);
-}
 .grid-item3 {
     background-color: var(--nav-hover-link-color);
     size: 35%;
     font-size: 30px;
     text-align: center;
     height: auto;
+
+  
 }
 nav a:link nav a:visited {
     color: var( #81D6E3);
@@ -239,10 +201,10 @@ h3 {
     color: var(--primary-color);
     text-align: center;
 }
-footer {
+.fot {
     margin: 1rem auto 0;
     width: 650px;
-    text-align: center;
+    text-align: center; /*center*/
     font-size: 0.8em;
     color: white;
     border-top: 1px solid #000;
@@ -250,6 +212,7 @@ footer {
     margin: 0 auto;
     padding: 1rem;
     background-color: black;
+    display: flex;
 }
 h4 {
     margin: 1rem;
@@ -260,4 +223,16 @@ h4 {
 
 #nam {
     color: var(--secondary-color);
+}
+
+#last {
+    margin-top: 40px;
+    margin-right: 100px;
+    margin-left: 120px;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: right;
+position: relative;
 }
