@@ -26,8 +26,8 @@
   
 body {
     font-family: var(--paragraph-font);
-    font-size: 1.2em; /* 1.2em*/
-    background-image: url("/wwr/images/hero5.png");
+    font-size: 1.2em;
+    background-image: url(/wwr/images/hero5.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
