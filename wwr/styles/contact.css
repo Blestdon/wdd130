@@ -42,7 +42,10 @@ header img {
     padding: 20px 20px 5px 20px;
 }
 
-
+.map {
+    width: 100px;
+    height: auto;
+}
 
 header {
 	margin: 1rem auto;
@@ -73,6 +76,28 @@ h1 {
 	text-size-adjust: relative;
 	position: 60px;
 }
+
+
+
+ul {
+    list-style-type: none; /* Removes bullets */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+}
+
+li {
+    display: inline-block; /* Displays list items horizontally */
+    margin-right: 20px; /* Adds spacing between items */
+}
+
+a {
+    text-decoration: none; /* Removes underlines from links */
+    color: #333; /* Sets link color */
+}
+
+
+
+
 .spreed {
     display: flex;
     justify-content: center;
@@ -144,51 +169,79 @@ h4 {
     text-align: center;
 }
 
+button {
+    margin: 1rem;
+    background-color: blue;
+    color: rgb(27, 29, 133);
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 2fr 1fr;
+    margin: 0 auto;
+}
+
+
 .grid-container {
     display: grid;
     grid-template-columns: 200px 200px 200px;
     grid-gap: 100px;
     background-color: white;
-    padding: 20px;
-    margin: 10px;
-
+    padding: 10px;
 }
 .grid-item {
-    background-color: var(--nav-hover-link-color);
+    background-color: white;
     padding: 20px;
     font-size: 30px;
     text-align: center;
-    margin: 10px;
 }
 
 .grid-container2 {
-    /* display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-gap:100px;
-    background-color: var(--nav-hover-link-color);
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-gap: 100px;
+    background-color: white;
     padding: 10px;
-    margin: 20px; */
+}
+.grid-item2 {
+    background-color: white;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
 
+.grid-container3 {
     display: flex;
     justify-content: space-evenly; /* Adjust as needed (space-between, space-around, space-evenly) */
 }
 
-.grid-item2 {
-text-align: center;
-}
-
 .grid-item3 {
-    background-color: var(--nav-hover-link-color);
-    size: 35%;
+    /* background-color: white;
+    padding: 20px;
     font-size: 30px;
     text-align: center;
-    height: auto;
+    display: grid; */
+        text-align: center;
+}
 
   
-}
 nav a:link nav a:visited {
     color: var( #81D6E3);
 }
+
 
 nav a:hover{
     color: var( #4CB5AE);
@@ -235,4 +288,13 @@ h4 {
     display: flex;
     justify-content: right;
 position: relative;
+}
+
+
+input {
+    padding: 5px 15px;
+    background: #31257d;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
