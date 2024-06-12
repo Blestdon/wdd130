@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url(https://fonts.google.com/specimen/Roboto);
+
+
+:root {
+    --main-bg-color: brown;
+    --primary-color : #1f221f;
+    --secondary-color: #d5c4c4;
+    --accent1:#fab3bf;
+    --accent2:#7a4646;
+
+    --heading-font:'Roboto';
+    --paragraph-font: 'specimen', 'Times New Roman', 'serif';
+
+
+    
+    --nav-background-color: #c8b5b5;
+    --nav-link-color:#0000;
+    --nav-hover-link-color:#ffe1e1;
+    --nav-hover-background-color: #d89393;
+  }
+  
+body {
+    font-family: var(--paragraph-font);
+    font-size: 1.2em; /* 1.2em*/
+    /* background-image: url("/wwr/images/hero5.png"); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header img {
+    margin-left: 70px;
+}
+
+.one {
+    display: flex;
+    padding: 20px 20px 5px 20px;
+}
+
+
+
+header {
+	margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 120px 1fr 2fr;
+	align-items: center;
+	border-bottom: 1px solid rgb(104, 36, 36);
+	max-width: 100%;
+    background-color: var(--nav-background-color);
+}
+
+.logo img {
+	margin-left: 30px;
+	width: 50px;
+	height: 50px;
+    padding-left: 40px;
+    
+}
+
+.book {
+    font-size: 30px
+}
+
+h1 {
+	font-size: 3rem;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+	text-size-adjust: relative;
+	position: 60px;
+}
+.spreed {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav .first {
+	text-align: right;
+    margin-left: 10px;
+    background-color: var(--nav-link-color);
+}
+
+.navigation {
+	display: flex;
+	list-style: none;
+    margin-left: 160px;
+
+    /* background-color: var(--nav-link-color); */
+
+}
+
+.navigation li {
+	flex: 1 1 100%;
+    margin-left: 30%;
+}
+
+.navigation a {
+	display: block;
+	color: var(---primary-color);
+	text-decoration: none;
+    font-size: 20px;
+    font-weight: 40px;
+    margin: 12px;
+    padding: 5px;
+    height: 50px;
+}
+
+
+h2 {
+    margin: 1rem;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: #8B85C1;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+h4 {
+	margin: 1rem;
+    font-size: 1.5em;
+    color: black;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-gap: 100px;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+
+}
+.grid-item {
+    background-color: var(--nav-hover-link-color);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+}
+
+.grid-container2 {
+    /* display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap:100px;
+    background-color: var(--nav-hover-link-color);
+    padding: 10px;
+    margin: 20px; */
+
+    display: flex;
+    justify-content: space-evenly; /* Adjust as needed (space-between, space-around, space-evenly) */
+}
+
+.grid-item2 {
+text-align: center;
+}
+
+.grid-item3 {
+    background-color: var(--nav-hover-link-color);
+    size: 35%;
+    font-size: 30px;
+    text-align: center;
+    height: auto;
+
+  
+}
+nav a:link nav a:visited {
+    color: var( #81D6E3);
+}
+
+nav a:hover{
+    color: var( #4CB5AE);
+    background-color: var(--nav-hover-link-color);
+}
+
+h3 {
+	margin: 1rem;
+    font-size: 1.5em;
+    color: var(--primary-color);
+    text-align: center;
+}
+.fot {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center; /*center*/
+    font-size: 0.8em;
+    color: white;
+    border-top: 1px solid #000;
+	width: auto;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: black;
+    display: flex;
+}
+h4 {
+    margin: 1rem;
+    font-size: 1.5em;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+#nam {
+    color: var(--secondary-color);
+}
+
+#last {
+    margin-top: 40px;
+    margin-right: 100px;
+    margin-left: 120px;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: right;
+position: relative;
+}
