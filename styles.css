@@ -1,0 +1,30 @@
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.3);
+    padding: 1rem;
+    background-color: blueviolet;
+    color: aliceblue;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+}
+
+p {
+    padding: 0;
+}
+
+footer {
+    margin-top: 16px;
+    border-top: 3px solid #001;
+    text-align: center;
+
+}
