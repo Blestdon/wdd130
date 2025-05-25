@@ -1,3 +1,7 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -9,8 +13,19 @@ nav a {
     padding: 20px;
 }
 
+.logo {
+    height: 100px;
+    width: 80px;
+    padding: 1rem;
+    border: 1 red solid;
+}
+
 h1 {
     color: darkblue;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Jost", sans-serif;
 }
 
 img {
