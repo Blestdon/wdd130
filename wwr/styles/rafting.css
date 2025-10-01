@@ -1,80 +1,250 @@
 :root {
-  --primary-color: #1e6091;   /* deep river blue */
-  --accent1-color: #168aad;   /* fresh aqua */
-  --accent2-color: #34a0a4;   /* teal green */
-  --background-color: #e0fbfc; /* light sky background */
-  --text-color: #0a2f4e;      /* dark navy for readability */
-
-  --heading-font: 'Jost', sans-serif;
-  --body-font: 'Roboto', sans-serif;
+  --primary-color: #0077b6;      /* Deep water blue */
+  --secondary-color: #0096c7;    /* Sky blue */
+  --accent-color: #00b4d8;       /* Bright aqua */
+  --light-color: #caf0f8;        /* Soft water foam */
+  --dark-color: #023e8a;         /* Deep ocean navy */
+  --text-color: #333;
+  --background-color: #fff;
 }
 
+/* --- Reset Box Model and Margins --- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
+/* --- Base Styles --- */
 body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
   background-color: var(--background-color);
+  line-height: 1.6;
 }
 
-
-header, main, footer {
-  width: 840px;
-  margin: 0 auto;
+/* --- Header --- */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
 }
 
-
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-  margin-bottom: 12px;
+header .logo {
+  width: 80px;
+  border-radius: 50%;
 }
 
-
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
+/* --- Navigation --- */
+nav {
+  display: flex;
+  gap: 1.5rem;
 }
 
-
-.socialmedia a {
+nav a {
+  color: white;
   text-decoration: none;
-  margin-right: 12px; /* spacing 4 icons */
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
-.socialmedia img {
-  width: 32px;
-  height: 32px;
+nav a:hover {
+  color: var(--light-color);
 }
 
-
+/* --- Hero Section --- */
 .hero {
   position: relative;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
   text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
-  color: #fff; /* white text - make sure there is enough contrast with the background-color */
+  color: white;
 }
 
-.hero article img {
-  float: right;
-  width: 125px;
+.hero-img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  font-family: 'Jost', sans-serif;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* --- Main Content Sections --- */
+main {
+  padding: 2rem;
+}
+
+section, article {
+  margin-bottom: 2.5rem;
+}
+
+h2 {
+  color: var(--primary-color);
+  font-family: 'Jost', sans-serif;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* --- Images --- */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* --- Footer --- */
+footer {
+  background-color: var(--dark-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer .socialmedia {
+  margin-top: 1rem;
+}
+
+footer .socialmedia img {
+  width: 32px;
+  height: 32px;
+  margin: 0 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+footer .socialmedia img:hover {
+  transform: scale(1.1);
+}
+
+/* =========================================
+   CONTACT PAGE STYLES
+   ========================================= */
+
+/* --- Contact Info Section --- */
+.contact-info {
+  display: grid;
+  gap: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+}
+
+/* --- Map Styling --- */
+.map-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.map-container iframe {
+  width: 90%;
+  max-width: 600px;
+  height: 350px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 8px;
+}
+
+/* --- Employee Profiles --- */
+.employee-section {
+  text-align: center;
+}
+
+.employee-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.employee {
+  background-color: var(--light-color);
+  padding: 1rem;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.employee img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.employee h3 {
+  margin-top: 0.5rem;
+  color: var(--dark-color);
+}
+
+/* --- Contact Form --- */
+form {
+  max-width: 600px;
+  margin: 2rem auto;
+  background-color: var(--light-color);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: var(--dark-color);
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+.radio-group {
+  margin: 1rem 0;
+}
+
+form input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+form input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+form button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: var(--accent-color);
 }
