@@ -1,18 +1,42 @@
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Color Scheme */
 :root {
   --primary-color: #0077b6;
   --secondary-color: #023e8a;
   --accent-color: #48cae4;
-  --text-color: #333;
-  --bg-color: #f9f9f9;
+  --light-bg: #f9f9f9;
   --white: #fff;
+  --text-color: #333;
 }
 
+/* Header & Nav */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--secondary-color);
+  padding: 1rem 2rem;
+}
+.logo {
+  height: 60px;
+}
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+}
+nav a:hover {
+  color: var(--accent-color);
+}
+
+/* Hero Section */
 .hero {
   position: relative;
   text-align: center;
@@ -28,48 +52,65 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--white);
-  background: rgba(0, 0, 0, 0.5);
-  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 10px;
+}
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--accent-color);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn:hover {
+  background: var(--primary-color);
+}
+
+/* Grid Section */
+.grid-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background: var(--light-bg);
+}
+.grid-img {
+  width: 100%;
   border-radius: 10px;
 }
 
-.grid-section,
-.trip-grid {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  padding: 2rem;
-}
-
+/* Newsletter */
 .newsletter {
   text-align: center;
   padding: 2rem;
-  background-color: var(--accent-color);
+  background: var(--accent-color);
   color: var(--white);
 }
-.newsletter input, .newsletter button {
+.newsletter input,
+.newsletter button {
   padding: 0.5rem;
   margin: 0.5rem;
   border: none;
   border-radius: 5px;
 }
-
-.btn {
-  background: var(--primary-color);
+.newsletter button {
+  background: var(--secondary-color);
   color: var(--white);
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  border-radius: 5px;
+  cursor: pointer;
 }
 
 /* Footer */
 footer {
+  text-align: center;
   background: var(--secondary-color);
   color: var(--white);
-  text-align: center;
   padding: 1rem;
 }
-footer img {
+.socialmedia img {
   width: 30px;
   margin: 0 0.5rem;
 }
