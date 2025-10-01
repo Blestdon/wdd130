@@ -1,250 +1,75 @@
-:root {
-  --primary-color: #0077b6;      /* Deep water blue */
-  --secondary-color: #0096c7;    /* Sky blue */
-  --accent-color: #00b4d8;       /* Bright aqua */
-  --light-color: #caf0f8;        /* Soft water foam */
-  --dark-color: #023e8a;         /* Deep ocean navy */
-  --text-color: #333;
-  --background-color: #fff;
-}
-
-/* --- Reset Box Model and Margins --- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* --- Base Styles --- */
-body {
-  font-family: 'Roboto', sans-serif;
-  color: var(--text-color);
-  background-color: var(--background-color);
-  line-height: 1.6;
+:root {
+  --primary-color: #0077b6;
+  --secondary-color: #023e8a;
+  --accent-color: #48cae4;
+  --text-color: #333;
+  --bg-color: #f9f9f9;
+  --white: #fff;
 }
 
-/* --- Header --- */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--primary-color);
-  color: white;
-  padding: 1rem 2rem;
-}
-
-header .logo {
-  width: 80px;
-  border-radius: 50%;
-}
-
-/* --- Navigation --- */
-nav {
-  display: flex;
-  gap: 1.5rem;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s ease;
-}
-
-nav a:hover {
-  color: var(--light-color);
-}
-
-/* --- Hero Section --- */
 .hero {
   position: relative;
   text-align: center;
-  color: white;
 }
-
 .hero-img {
   width: 100%;
-  height: 60vh;
+  height: 400px;
   object-fit: cover;
-  filter: brightness(70%);
 }
-
-.hero h1 {
+.hero-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 3rem;
-  font-family: 'Jost', sans-serif;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  color: var(--white);
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  border-radius: 10px;
 }
 
-/* --- Main Content Sections --- */
-main {
-  padding: 2rem;
-}
-
-section, article {
-  margin-bottom: 2.5rem;
-}
-
-h2 {
-  color: var(--primary-color);
-  font-family: 'Jost', sans-serif;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-/* --- Images --- */
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-/* --- Footer --- */
-footer {
-  background-color: var(--dark-color);
-  color: white;
-  text-align: center;
-  padding: 1rem;
-}
-
-footer .socialmedia {
-  margin-top: 1rem;
-}
-
-footer .socialmedia img {
-  width: 32px;
-  height: 32px;
-  margin: 0 0.5rem;
-  transition: transform 0.3s ease;
-}
-
-footer .socialmedia img:hover {
-  transform: scale(1.1);
-}
-
-/* =========================================
-   CONTACT PAGE STYLES
-   ========================================= */
-
-/* --- Contact Info Section --- */
-.contact-info {
+.grid-section,
+.trip-grid {
   display: grid;
-  gap: 1rem;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.contact-info p {
-  font-size: 1.1rem;
-}
-
-/* --- Map Styling --- */
-.map-container {
-  display: flex;
-  justify-content: center;
-  margin: 2rem 0;
-}
-
-.map-container iframe {
-  width: 90%;
-  max-width: 600px;
-  height: 350px;
-  border: 2px solid var(--secondary-color);
-  border-radius: 8px;
-}
-
-/* --- Employee Profiles --- */
-.employee-section {
-  text-align: center;
-}
-
-.employee-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-.employee {
-  background-color: var(--light-color);
-  padding: 1rem;
-  border-radius: 10px;
-  width: 250px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.employee img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.employee h3 {
-  margin-top: 0.5rem;
-  color: var(--dark-color);
-}
-
-/* --- Contact Form --- */
-form {
-  max-width: 600px;
-  margin: 2rem auto;
-  background-color: var(--light-color);
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-form label {
-  display: block;
-  margin-top: 1rem;
-  font-weight: bold;
-  color: var(--dark-color);
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-
-form textarea {
-  height: 120px;
-  resize: vertical;
-}
-
-.radio-group {
-  margin: 1rem 0;
-}
-
-form input[type="radio"] {
-  margin-right: 0.5rem;
-}
-
-form input[type="checkbox"] {
-  margin-right: 0.5rem;
-}
-
-form button[type="submit"] {
-  display: block;
-  width: 100%;
-  padding: 0.8rem;
-  background-color: var(--primary-color);
-  color: white;
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  margin-top: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-form button[type="submit"]:hover {
+.newsletter {
+  text-align: center;
+  padding: 2rem;
   background-color: var(--accent-color);
+  color: var(--white);
+}
+.newsletter input, .newsletter button {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn {
+  background: var(--primary-color);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background: var(--secondary-color);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+}
+footer img {
+  width: 30px;
+  margin: 0 0.5rem;
 }
